@@ -36,6 +36,7 @@ Data Enrichment:
 
 | Hypothesis | Description |
 | --- | --- |
+| RQ | How do macroeconomic conditions influence film industry financial performance, and do escapist genres (comedy, fantasy, animation) achieve higher ROI during periods of economic hardship such as high unemployment? |
 | H1 | During high unemployment periods, escapist genres (comedy, fantasy, animation) perform better |
 | H2 | The 2008 financial crisis period shows significantly different ROI distribution compared to normal years |
 
@@ -71,66 +72,15 @@ Data Enrichment:
 - Random Forest: Feature importance analysis to identify key drivers of ROI
 - Model Evaluation: Train-test split, cross-validation, RMSE, R² metrics
 
-## Key Findings
 
-### Hypothesis Test Results
-
--H1: Escapist genres + High unemployment → Better performance
--Mann-Whitney U test → P_value=0.0143,  We Reject
-
--H2: 2008 crisis ROI ≠ Normal years ROI
--t-test → P_value=0.4542, We reject
-
-
-### Machine Learning Results
-
-```text
-Linear Regression Coefficients:
-
-Intercept: 0.5806
-
-imdb_score               0.3202
-genre_encoded            0.2504
-country_encoded          0.2314
-gdp_per_capita           0.1669
-title_year              -0.1648
-inflation                0.1008
-budget                  -0.0874
-unemployment             0.0843
-gdp_growth               0.0404
-
-Feature Importance (Random Forest):
-
-budget               0.2577
-imdb_score           0.1976
-genre_encoded        0.1035
-gdp_per_capita       0.0980
-inflation            0.0854
-title_year           0.0776
-unemployment         0.0708
-gdp_growth           0.0660
-country_encoded      0.0433
-
-Model Performance:
-Linear Regression Performance:
-Test RMSE: 2.3662
-Test R^2: 0.0423
-
-Random Forest Performance:
-Test RMSE: 2.1134
-Test R^2: 0.2360
-```
-
-
-
-##Limitations
+### 5. Limitations
 
 - Movie dataset is heavily weighted toward US films
 - ROI calculation only includes box office revenue (excludes streaming, DVD, merchandise)
 - Economic data may be incomplete for some countries/years
 
 
-##Future Work
+### 6. Future Work
 - Include streaming revenue data for more accurate ROI
 - Apply time series analysis to predict future trends
 
