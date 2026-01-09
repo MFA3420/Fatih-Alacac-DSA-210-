@@ -133,7 +133,4 @@ Test R^2: 0.2360
 ##Future Work
 - Include streaming revenue data for more accurate ROI
 - Apply time series analysis to predict future trends
-```text
 
-
-```
