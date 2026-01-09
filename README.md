@@ -75,50 +75,49 @@ Data Enrichment:
 
 ### Hypothesis Test Results
 
-H1: Escapist genres + High unemployment → Better performance
+-H1: Escapist genres + High unemployment → Better performance
+-Mann-Whitney U test → P_value=0.0143,  We Reject
 
-Mann-Whitney U test → P_value=0.0143,  We Reject
-
-H2: 2008 crisis ROI ≠ Normal years ROI
-t-test → P_value=0.4542, We reject
+-H2: 2008 crisis ROI ≠ Normal years ROI
+-t-test → P_value=0.4542, We reject
 
 
-Machine Learning Results
+### Machine Learning Results
 
 Linear Regression Coefficients:
 
-Intercept: 0.5806
+-Intercept: 0.5806
 
-imdb_score               0.3202
-genre_encoded            0.2504
-country_encoded          0.2314
-gdp_per_capita           0.1669
-title_year              -0.1648
-inflation                0.1008
-budget                  -0.0874
-unemployment             0.0843
-gdp_growth               0.0404
+-imdb_score               0.3202
+-genre_encoded            0.2504
+-country_encoded          0.2314
+-gdp_per_capita           0.1669
+-title_year              -0.1648
+-inflation                0.1008
+-budget                  -0.0874
+-unemployment             0.0843
+-gdp_growth               0.0404
 
 Feature Importance (Random Forest):
 
-budget               0.2577
-imdb_score           0.1976
-genre_encoded        0.1035
-gdp_per_capita       0.0980
-inflation            0.0854
+-budget               0.2577
+-imdb_score           0.1976
+-genre_encoded        0.1035
+-gdp_per_capita       0.0980
+-inflation            0.0854
 title_year           0.0776
-unemployment         0.0708
-gdp_growth           0.0660
-country_encoded      0.0433
+-unemployment         0.0708
+-gdp_growth           0.0660
+-country_encoded      0.0433
 
 Model Performance:
 Linear Regression Performance:
-Test RMSE: 2.3662
-Test R^2: 0.0423
+-Test RMSE: 2.3662
+-Test R^2: 0.0423
 
 Random Forest Performance:
-Test RMSE: 2.1134
-Test R^2: 0.2360
+-Test RMSE: 2.1134
+-Test R^2: 0.2360
 
 
 
